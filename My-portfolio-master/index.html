@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Josipa Babic</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body>
+
+    <!--HEADER -->
+    <div class="my-header">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light navbar-inverse">
+            <a class="navbar-brand" href="#home">
+                <!-- <img src="img/logo.png"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav nav nav-pills justify-content-end ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-work">MY WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <!--HOME -->
+    <section id="home">
+        <div id="home-cover">
+
+            <div id="home-content-box">
+                <div id="home-heading">
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--SERVICES -->
+    <section id="services">
+        <h1>SERVICES</h1>
+        <div class="row">
+            <div class="card-group">
+                <div class="card mb-4">
+                    <img src="img/mobile-app.jpg" width="411" height="273" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Apps</h5>
+                        <p class="card-text">
+                            Mobile apps have the advantage of mobile devices like camera, phone calls, etc. 
+                            This features are making user experience easier. 
+                            I have made few apps by my self. They were android based app. </p>
+                        <p class="card-text"><small class="text-muted">Java, JavaScript</small></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <img src="img/webApp.jpg" width="411" height="273" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Front-end Developer</h5>
+                        <p class="card-text">
+                            I am creative person, I like to put my ideas to digital form. 
+                            I have made few web-sites and I also worked on designing apps.
+                            Everyday there are new things coming to learn.  </p>
+                        <p class="card-text"><small class="text-muted">HTML5, CSS, BOOTSTRAP, PUG</small></p>
+                    </div>
+                </div>
+                <div class="w-100 d-lg-none d-sm-block d-md-block">
+                    <!-- wrap every 2 on sm-->
+                </div>
+                <div class="card mb-4">
+                    <img src="img/webDesign.jpg" width="411" height="273" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Back-end</h5>
+                        <p class="card-text"> 
+                            Even thought I am creative, I like to see how the things that you cannot see acctually works. 
+                            It helps a lot to understand logic of programming and you are developing abstract way of thinking.
+                            For backend I mostly work with Java, even tho I have some experinece working in C#.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Java</small></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <img src="img/JavaScript.png" width="411" height="273" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud</h5>
+                        <p class="card-text">
+                            To be able to have completed apps, of course you need to know how to store data.  
+                            I have experience with SQL databases and organisation of relation detabases.
+                            I worked also with non relational detabases. </p>
+                        <p class="card-text"><small class="text-muted">MongoDB, Sql, Firebase</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT -->
+    <section id="about">
+        <h1>ABOUT</h1>
+        <div class="wrapper">
+            <div class="row">
+
+                <div id="about-text">
+                    <p>
+                        I am ambitious student of Software Engineering. During my education I worked on projects in many different areas of development. 
+                        I had an internship as frontend application developer.                                        
+                        My hunger for knowledge and determination to turn information into action has contributed to my most recent success working on web application for Kamstrup. 
+                        I want to challenge my-self and gain more practical knowledge, my career goal is to become a fully-qualified and experienced developer.
+
+                    </p>
+                    <a id="cv-download" type="button" class="btn btn-default btn-lg btn-block" href="img/BabicCV.asd v2.pdf" target="_blank">Download CV</a>
+                </div>
+                <div class="w-100 d-lg-none d-sm-block d-md-block">
+                    <!-- wrap every 2 on sm-->
+                </div>
+                <div id="about-bg-diagonal" class="bg-parallax"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--WORK-->
+    <section id="my-work">
+        <h1>MY WORK</h1>
+        <div class="gallery-section">
+
+            <div class="border"></div>
+            <div class="gallery">
+                <a href="img/1.jpg" class="image">
+                    <img src="img/1.jpg" alt="">
+                    <div class="text-block">
+                        <h4>Publisher/Subscriber app java</h4>
+
+                    </div>
+                </a>
+                <a href="img/bbc_news.jpg" class="image">
+                    <img src="img/bbc_news.jpg" alt="">
+                    <div class="text-block">
+                        <h4>BBC News web-site</h4>
+                    </div>
+                </a>
+                <a href="img/note_app.jpg" class="image">
+                    <img src="img/note_app.jpg" alt="">
+                    <div class="text-block">
+                        <h4> Note app Java</h4>
+                    </div>
+                </a>
+                <a href="img/indecision.png" class="image">
+                    <img src="img/indecision.png" alt="">
+                    <div class="text-block">
+                        <h4>Indecision-app, random picker js</h4>
+                    </div>
+                </a>
+                <a href="img/portfolio.png" class="image">
+                    <img src="img/portfolio.png" alt="">
+                    <div class="text-block">
+                        <h4>My portfolio website JS</h4>
+                    </div>
+                </a>
+                <a href="img/Untitled.jpg" class="image">
+                    <img src="img/Untitled.jpg" alt="">
+                    <div class="text-block">
+                        <h4>Weather app React.js </h4>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div id="contact-left">
+
+                        <h3>Josipa Babic</h3>
+
+
+                        <div id="contact-info">
+
+                            <address>
+                                <p>Samsogade 32<br>
+                                    Aarhus C 8000</p>
+                            </address>
+                            <div id="phone-fax-email">
+                                <p>
+                                    <strong>Email:</strong><span> josipa.mostar@gmail.com </span> <br>
+                                </p>
+                            </div>
+
+                        </div>
+                        <ul class="social-list">
+                            <li><a href="https://www.facebook.com/josipa.babic2" target="_blank" class="social-icon icon-white"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/josipa-babic/" target="_blank" class="social-icon icon-white"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/jbabiccc" target="_blank" class="social-icon icon-white"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:josipa.mostar@gmail.com" class="social-icon icon-white"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="contact-right">
+
+                        <h3>Contact</h3>
+                        <form id="contactForm">
+
+                            <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="off" class="form-control" />
+                            <br>
+                            <input id="email" name="email" type="email" value="" required placeholder="your.name@gmail.com" class="form-control" />
+                            <br>
+                            <textarea id="message" name="message" rows="10" placeholder="Send me a message." class="form-control"></textarea>
+                            <br>
+                            <button type='submit' >
+                                <i class="fa fa-paper-plane"></i>&nbsp;Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div id="footer-copyrights">
+                            <p>@JB 2020
+                            <!-- <p>Logo generated by <a href="https://www.designevo.com/logo-maker/" title="Free Online Logo Maker">DesignEvo free logo designer</a> </p> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Arrow to the top-->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up fa-3x"></i></a>
+
+    <!--Custom js -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custome.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+</body>
+</html>
+<style>
+    #about {
+    width: 100%;
+    height: auto;
+    background-color: #ebedee;
+
+}
+
+#about h1 {
+    font-family: Courier;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 40.5px;
+    font-weight: 500;
+}
+
+#about h1:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #fdb44b;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#about h1:hover:after {
+    transform: scaleX(1);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#cv-download{
+    font-family: Courier;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;;
+}
+.wrapper {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.row1 {
+    margin-top: 50px;
+}
+
+#about-text {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#about-text p {
+    font-family: Courier;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+#about-bg-diagonal {
+    width: 50%;
+    height: 550px;
+    float: right;
+    margin-right: 0;
+    background-image: url(../img/IMG_8427.JPG);
+    border-left: 100px solid #ebedee;
+    border-top: 600px solid transparent;
+
+}
+</style>
