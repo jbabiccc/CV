@@ -96,6 +96,7 @@
         border-top: 0;
         width: 100%;
         height: 350px;
+        display: none !important;
     }
 
     .column {
@@ -124,6 +125,8 @@
         border-top: 0;
         width: 100%;
         height: 350px;
+        display: none !important;
+
     }
 
     #about-text {
@@ -159,6 +162,8 @@
         border-top: 0;
         width: 100%;
         height: 350px;
+        display: none !important;
+
     }
 
     #about-text p {
