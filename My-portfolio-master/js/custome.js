@@ -93,19 +93,4 @@ var firebaseConfig = {
     });
   }
 
-var your_drink;
-function pureFunction(a) {
-    return a.split("").reverse().join("");
-  }
-var barista = {
-	str1:'ion',
-    str2: pureFunction("rcne"),
-    str3:'ypt',
-    request: function(preference){
-    	return preference+ "Secret word:" + this.str2 + this.str3 + this.str1
-    }
-};
 
-barista.request(your_drink)
-
-print(your_drink)
